@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, td {
+            border: 1px black dashed;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Colegios</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    name
+                </th>
+                <th>
+                    Acciones
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for curso in cursos %}
+            <tr>
+                <td>
+                    <p>
+                        <a href="/cursos/{{curso.id}}">{{ curso.name }}</a>
+                    </p>
+                </td>
+                <td>
+                    <div>
+                        <button type="button" onclick="window.location = '/cursos/{{curso.id}}/editar/'">Editar</button>
+                        <form action="/cursos/{{curso.id}}/eliminar" method="post">
+                            <button type="button">Eliminar</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>    
+</body>
+</html>

@@ -1,0 +1,25 @@
+Crear 3 dojos nuevos:
+
+INSERT INTO (Nombre)
+VALUES('Dojo1');
+
+INSERT INTO (Nombre)
+VALUES('Dojo2');
+
+INSERT INTO (Nombre)
+VALUES('Dojo3');
+
+Elimina los 3 dojos que acabas de crear:
+ 
+DELETE FROM dojos 
+
+Crear 3 dojos nuevos:
+
+INSERT INTO (Nombre)
+VALUES('Dojo1');
+
+INSERT INTO (Nombre)
+VALUES('Dojo2');
+
+INSERT INTO (Nombre)
+VALUES('Dojo3');

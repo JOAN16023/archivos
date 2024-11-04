@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar curso</title>
+    <h1>Editar curso: {{curso.name}}</h1>
+    <form action="/cursos/{{curso.id}}/editar" method="post">
+        <div>
+            <input type="hidden" name="id_curso" value="{{curso.id}}">
+        </div>
+        <div>
+            <label for="name">name</label>
+            <input type="text" name="name_curso" value="{{curso.name}}" >
+        </div>
+        <button type="submit">Actualizar</button>
+    </form>
+</head>
+<body>
+    
+</body>
+</html>

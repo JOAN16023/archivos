@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear curso</title>
+    <h1>Crear curso</h1>
+    <form action="/cursos/crear/" method="post">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="nombre_curso">
+        </div>
+        <div>
+            <label for="colegio">Colegio</label>
+            <select name="id_curso" id="colegio">
+                {% for colegio in colegios %}
+                    <option value="{{ id_curso }}">{{ colegio.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</head>
+<body>
+    
+</body>
+</html>

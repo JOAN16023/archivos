@@ -1,0 +1,96 @@
+
+Crear 5 usuarios:
+INSERT INTO (Nombre, apellido)
+VALUES(‘Jane’, ‘Austen’);
+
+INSERT INTO (Nombre, apellido)
+VALUES(Emily, ‘Dickinson’);
+
+INSERT INTO (Nombre, apellido)
+VALUES(‘Fyodor’, ‘Dostoevsky’);
+
+INSERT INTO (Nombre, apellido)
+VALUES(‘William’, ‘Shakespeare’);
+
+INSERT INTO (Nombre, apellido)
+VALUES(‘Lau’, ‘Tzu’);
+	     
+insertar libros 5:
+INSERT INTO libros(Title, num_of_pages’) 
+VALUES(‘C Sharp’, ‘50’);
+
+INSERT INTO libros(Title, num_of_pages’) 
+VALUES(‘Java’, ‘100’);
+
+INSERT INTO libros(Title, num_of_pages’) 
+VALUES(‘Python’, ‘200’);
+
+INSERT INTO libros(Title, num_of_pages’) 
+VALUES(‘PHP’, ‘300’);
+
+INSERT INTO libros(Title, num_of_pages’) 
+VALUES(‘Ruby’, ‘400’);
+
+Actualizar el libro c a c#:
+
+UPDATE libros SET title = ‘C#’
+WHERE title = ‘C Sharp’;
+
+Cambia el cuarto nombre usuario: 
+
+UPDATE users SET first_name = ‘bill’
+WHERE id = 4;
+
+Haz que el primer usuario marque como favoritos los primeros dos libros:
+
+INSERT INTO favoritos(User_id, Book_id)
+VALUES(1,1)
+
+INSERT INTO favoritos(User_id, Book_id)
+VALUES(1,2)
+
+Haz que el segundo usuario marque como favoritos los primeros tres 
+
+INSERT INTO favoritos(User_id, Book_id)
+VALUES(2,1);
+
+INSERT INTO favoritos(User_id, Book_id)
+VALUES(2,2);
+
+INSERT INTO favoritos(User_id, Book_id)
+VALUES(2,3);
+Haz que el tercero usuario marque como favoritos los primeros cuatro 
+
+INSERT INTO favoritos(User_id, Book_id)
+VALUES(3,1),(3,2),(3,3),(3,4); 
+
+
+Haz que el cuarto usuario marque como favoritos los primeros cuatro
+
+INSERT INTO favorites(User_id, Book_id)
+VALUES(3,1),(3,2),(3,3),(3,4); 
+
+Recupera todos los usuarios que marca como favoritos el tercer libro:
+
+SELECT * FROM favorites
+JOIN user ON favorites.user_id = favorites.book_id 
+WHERE book_id = 3; 
+
+elimina el primer usuarios de favoritos:
+DELETE FROM favorites  
+WHERE user_id = 2 AND book_id = 3;
+
+Haz que el quinto usuario marque como favorito el segundo:
+INSERT INTO favorites(User_id, Book_id)
+VALUES(5,2)
+
+Encuentra todos los libros que el tercer usuario como favorito 
+SELECT * FROM favorites 
+JOIN libros ON favorites.book_id = libros_id
+WHERE user_id = 3;
+
+penúltima:
+SELECT * FROM favorites 
+JOIN libros ON favorites.user.id = users.id
+JOIN libros ON favorites.book.id = libros.id
+WHERE book_id = 5;
