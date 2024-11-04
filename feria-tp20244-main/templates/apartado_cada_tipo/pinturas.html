@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Builer/Pinturas y Accesorios</title>
+    <link rel="stylesheet" href="/apartado_cada_tipo/Apartados.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/Apartados.css') }}">
+</head>
+<body>
+    
+    <!--Nuestros correos-->
+    <nav class="correos">
+        <a href="#"><p>Joan.tapia.hermosilla@alumnos.sip.cl</p></a>
+        <a href="#"><p>Matias.velasquez.donoso.1@alumnos.sip.cl</p></a>
+    </nav>
+<!--navv-->
+<header>
+
+    <nav class="logo">
+        <div class="ellogo">
+            <a href="/logo"><img src="{{ url_for('static', filename='img/logo.2.png') }}" alt=""></a>
+        </div>
+        <input type="text" placeholder=" Buscador">
+        <ul>
+            <li><a href="/inicio">Inicio sesion</a></li>
+            <li><a href="">Compras</a></li>
+        </ul>
+
+    </nav>  
+<!--categorias-->
+    <div class="categorias">
+
+        <h3><a href="/logo">Home</a></h3>
+        <h3><a href="">Nosotros</a></h3>
+        <h3><a href="#">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+        
+    </div>
+</header>
+
+<h4 class="herramientas-inicio">Inicio / Pinturas y Accesorios</h4>
+
+<div class="pliss">
+    <div class="izquierda">
+        <div class="apartado-izquierda">
+            <h3><a href="/aislante">Aislante Termico</a></h3>
+            <h3><a href="/cemento">Cemento y Morteros</a></h3>
+            <h3><a href="/herramientas">Herramientas Eléctricas</a></h3>
+            <h3><a href="/manuales">Herramientas Manuales</a></h3>
+            <h3><a href="/metalcon">Metalcon</a></h3>
+            <h3><a href="/general">Materiales de contruccion</a></h3>
+            <h3><a href="/puertas">Puertas y chapas</a></h3>
+            <h3><a href="/techumbres">Techumbres de Metal</a></h3>
+            <h3><a href="/ventanas">Ventanas de Aluminio</a></h3>
+        </div>
+    
+    </div>
+    
+    <section>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-21%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin1.png' ) }}" alt="">
+            </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>SIPA LATEX 1 GALON EXTRACUBRIENTE</h3>
+                <div class="precioss"><span>$14.990</span><span class="tachar2">$18.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+            
+            
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-33%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin2.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>SILICONA SELLANTE PROFESIONAL BLAN...</h3>
+                <div class="precioss"><span>$1.990</span><span class="tachar2">$2.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-12%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin3.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>SET DE RODILLOS PARA PINTAR 6PIEZAS +...</h3>
+                <div class="precioss"><span>$16.790</span><span class="tachar2">$18.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-26%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin4.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>SIPA ESMALTE AL AGUA SEMIBRILLO BLANCO...</h3>
+                <div class="precioss"><span>$44.990</span><span class="tachar2">$61.190</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-17%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin5.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>ESMALTE AL AGUA COLOR BLANCO...</h3>
+                <div class="precioss"><span>$39.990</span><span class="tachar2">$47.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-19%</span>
+                <div class="dentro-producto"> 
+                    <img src="{{ url_for('static', filename='/img_productos/esmalte.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>ESMALTE AL AGUA BLANCO DECO PASSOL </h3>
+                <div class="precioss"><span>$49.790</span><span class="tachar2">$61.490</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-23%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin6.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PINTURA DE ALTO TRAFICO CONTRASTE...</h3>
+                <div class="precioss"><span>$40.444</span><span class="tachar2">$60.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin7.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PINTURA LATEX 4GL BLANCO PASSOL</h3>
+                <div class="precioss"><span>$53.444</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-17%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin6.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PINTURA DE ALTO TRAFICO CONTRASTE...</h3>
+                <div class="precioss"><span>$15.790</span><span class="tachar2">$30.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin11.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>ESMALTE AL AGUA PROFESIONAL 1GL...</h3>
+                <div class="precioss"><span>$43.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-14%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin10.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>RODILLO PELO CORTO NEXXO 18CM</h3>
+                <div class="precioss"><span>$2.990</span><span class="tachar2">$3.490</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-30%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_pinturas/pin12.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>SELLANTE BUTILICO 310ML MULTISELLO...</h3>
+                <div class="precioss"><span>$3.490</span><span class="tachar2">$4.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+    </section>
+
+</div>
+
+   <!--Footer-->
+   <footer>
+
+    <div class="logo-final">
+        <a href="/logo">
+            <img src="{{ url_for('static', filename='img/logo.2.png') }}" alt="">
+        </a>
+    </div>
+
+    <div class="categorias-finales">
+        <h2>Nosotros:</h2>
+        <h3><a href="#">Nosotros</a></h3>
+        <h3><a href="/logo">Herramientas</a></h3>
+        <h3><a href="#">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+    </div>
+
+    <div class="establecimiento">
+        <h2>Establecimiento:</h2>
+        <h3>Colegio Arturo Matte Larraín</h3>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>

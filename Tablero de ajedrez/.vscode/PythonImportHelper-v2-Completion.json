@@ -1,0 +1,72 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "index",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def index():\n    return render_template(\"index.html\",row=8,col=8,color_one='red',color_two='black')\n@app.route('/<int:x>')\ndef row(x):\n    return render_template(\"index.html\",row=x,col=8,color_one='red',color_two='black')\n@app.route('/<int:x>/<int:y>')\ndef row_col(x,y):\n    return render_template(\"index.html\",row=x,col=y,color_one='red',color_two='black')\n@app.route('/<int:x>/<int:y>/<string:one>')\ndef row_col_one(x,y,one):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "row",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def row(x):\n    return render_template(\"index.html\",row=x,col=8,color_one='red',color_two='black')\n@app.route('/<int:x>/<int:y>')\ndef row_col(x,y):\n    return render_template(\"index.html\",row=x,col=y,color_one='red',color_two='black')\n@app.route('/<int:x>/<int:y>/<string:one>')\ndef row_col_one(x,y,one):\n    return render_template(\"index.html\",row=x,col=y,color_one=one,color_two='black')\n@app.route('/<int:x>/<int:y>/<string:one>/<string:two>')\ndef row_col_two(x,y,one,two):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "row_col",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def row_col(x,y):\n    return render_template(\"index.html\",row=x,col=y,color_one='red',color_two='black')\n@app.route('/<int:x>/<int:y>/<string:one>')\ndef row_col_one(x,y,one):\n    return render_template(\"index.html\",row=x,col=y,color_one=one,color_two='black')\n@app.route('/<int:x>/<int:y>/<string:one>/<string:two>')\ndef row_col_two(x,y,one,two):\n    return render_template(\"index.html\",row=x,col=y,color_one=one,color_two=two)\nif __name__==\"__main__\":\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "row_col_one",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def row_col_one(x,y,one):\n    return render_template(\"index.html\",row=x,col=y,color_one=one,color_two='black')\n@app.route('/<int:x>/<int:y>/<string:one>/<string:two>')\ndef row_col_two(x,y,one,two):\n    return render_template(\"index.html\",row=x,col=y,color_one=one,color_two=two)\nif __name__==\"__main__\":\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "row_col_two",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def row_col_two(x,y,one,two):\n    return render_template(\"index.html\",row=x,col=y,color_one=one,color_two=two)\nif __name__==\"__main__\":\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/')\ndef index():\n    return render_template(\"index.html\",row=8,col=8,color_one='red',color_two='black')\n@app.route('/<int:x>')\ndef row(x):\n    return render_template(\"index.html\",row=x,col=8,color_one='red',color_two='black')\n@app.route('/<int:x>/<int:y>')\ndef row_col(x,y):\n    return render_template(\"index.html\",row=x,col=y,color_one='red',color_two='black')",
+        "detail": "app",
+        "documentation": {}
+    }
+]

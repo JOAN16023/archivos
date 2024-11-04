@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Builer/Puertas y Chapas</title>
+    <link rel="stylesheet" href="/apartado_cada_tipo/Apartados.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/Apartados.css') }}">
+</head>
+<body>
+    
+    <!--Nuestros correos-->
+    <nav class="correos">
+        <a href="#"><p>Joan.tapia.hermosilla@alumnos.sip.cl</p></a>
+        <a href="#"><p>Matias.velasquez.donoso.1@alumnos.sip.cl</p></a>
+    </nav>
+<!--navv-->
+<header>
+
+    <nav class="logo">
+        <div class="ellogo">
+            <a href="/logo"><img src="{{ url_for('static', filename='img/logo.2.png') }}" alt=""></a>
+        </div>
+        <input type="text" placeholder=" Buscador">
+        <ul>
+            <li><a href="/inicio">Inicio sesion</a></li>
+            <li><a href="">Compras</a></li>
+        </ul>
+
+    </nav>  
+<!--categorias-->
+    <div class="categorias">
+
+        <h3><a href="/logo">Home</a></h3>
+        <h3><a href="">Nosotros</a></h3>
+        <h3><a href="#">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+        
+    </div>
+</header>
+
+<h4 class="herramientas-inicio">Inicio / Puertas y Chapas</h4>
+
+<div class="pliss">
+    <div class="izquierda">
+        <div class="apartado-izquierda">
+            <h3><a href="/aislante">Aislante Termico</a></h3>
+            <h3><a href="/cemento">Cemento y Morteros</a></h3>
+            <h3><a href="/herramientas">Herramientas Eléctricas</a></h3>
+            <h3><a href="/manuales">Herramientas Manuales</a></h3>
+            <h3><a href="/metalcon">Metalcon</a></h3>
+            <h3><a href="/general">Materiales De Construccion</a></h3>
+            <h3><a href="/pinturas">Pinturas Y accesorios</a></h3>
+            <h3><a href="/techumbres">Techumbres de Metal</a></h3>
+            <h3><a href="/ventanas">Ventanas de Aluminio</a></h3>
+        </div>
+    
+    </div>
+    
+    <section>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-50%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue1.png' ) }}" alt="">
+            </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PUERTA DE MADERA AISLADA EN EL FOND...</h3>
+                <div class="precioss"><span>$25.990</span><span class="tachar2">$35.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+            
+            
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-24%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue2.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PUERTAS DE MADERA LISA DE 215 X 56 CM</h3>
+                <div class="precioss"><span>$29.990</span><span class="tachar2">$49.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-24%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue3.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PUERTA TALLADA A MANO DE MADERA TE...</h3>
+                <div class="precioss"><span>$39.990</span><span class="tachar2">$70.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue4.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CERRADURA SOBREPONER R-110 N...</h3>
+                <div class="precioss"><span>$13.890</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue5.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PUERTA CHAPA 80 X 20 PUNTA DIAMANTE CO...</h3>
+                <div class="precioss"><span>$29.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-32%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue6.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PUERTA DE MADERA ACAJOU AISLADA</h3>
+                <div class="precioss"><span>$39.990</span><span class="tachar2">$54.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue7.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CERRADURA CILÍNDRICA OISTER 101 ACCESO B...</h3>
+                <div class="precioss"><span>$6.390</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-50%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue8.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PUERTA DE MADERA DE CAOBA MACIZA</h3>
+                <div class="precioss"><span>$45.990</span><span class="tachar2">$85.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-17%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue9.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PUERTA DE MADERA DE HORMIGÓN</h3>
+                <div class="precioss"><span>$34.990</span><span class="tachar2">$50.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue10.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CERRADURA EMBUTIR OISTER TRANCURA A...</h3>
+                <div class="precioss"><span>$34.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-20%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue11.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PUERTA PIVOTANTES DE MADERA PARA ENTRA...</h3>
+                <div class="precioss"><span>$50.444</span><span class="tachar2">$60.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_puertas/pue12.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CERRADURA EMBUTIR OISTER TRANCURA...</h3>
+                <div class="precioss"><span>$38.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+    </section>
+
+</div>
+
+   <!--Footer-->
+   <footer>
+
+    <div class="logo-final">
+        <a href="/logo">
+            <img src="{{ url_for('static', filename='img/logo.2.png') }}" alt="">
+        </a>
+    </div>
+
+    <div class="categorias-finales">
+        <h2>Nosotros:</h2>
+        <h3><a href="#">Nosotros</a></h3>
+        <h3><a href="/logo">Herramientas</a></h3>
+        <h3><a href="#">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+    </div>
+
+    <div class="establecimiento">
+        <h2>Establecimiento:</h2>
+        <h3>Colegio Arturo Matte Larraín</h3>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>

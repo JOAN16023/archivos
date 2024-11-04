@@ -1,0 +1,201 @@
+*{
+    margin:0%;
+    padding: 0%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: rgb(250, 239, 226);
+}
+/*Nuestros correos*/
+.correos{
+    background-color: rgb(63, 72, 204);
+    display: flex;
+    justify-content: end;
+}
+.correos a{
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+/*navv*/
+header{
+    position: sticky;
+    top: 0;
+}
+.logo{
+    background-color: cornflowerblue;
+    display: flex;
+}
+.logo .ellogo img{
+    width: 200px;
+    padding: 20px 110px;
+}
+.logo input{
+    margin: auto;
+    height: 32px;
+    width: 30%;
+    border: 0px;
+    border-radius: 5px;
+}
+ul{
+    display: flex;
+    margin: auto;
+    list-style: none;
+    font-size: 1.1rem;
+}
+ul li{
+    margin: 5px;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    color: rgb(63, 72, 204);
+}
+/*categorias*/
+.categorias{
+    background-color: rgb(63, 72, 204);
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+}
+.categorias h3 a{
+    color: white;
+    text-decoration: none;
+}
+.categorias h3 a:hover{
+    color: dodgerblue;
+}
+/*los Productos*/
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+section .productos-finales{
+    margin: auto;
+    background-color: rgb(136, 174, 245);
+    width: 220px;
+    height: 340px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px gray;
+}
+section .productos-finales img{
+    display: flex;
+    width: 10vw;
+    margin: auto;
+}
+section .productos-finales img:hover{
+    transform: scale(1.1);
+    transition: 3s;
+}
+section .productos-finales a{
+    text-decoration: none;
+}
+section .productos-finales a span{
+    color: black;
+    background-color: cornflowerblue;
+    border-radius: 3px;
+    margin: auto 2px;
+    font-size: 0.9rem;
+}
+section .productos-finales .titulos-producto h3{
+    display: flex;
+    padding: 10px 20px;
+    margin: auto;
+    color: white;
+    font-size: 1rem;
+}
+section .productos-finales .titulos-producto span{
+    margin: 1px 20px;
+    color: black;
+}
+section .productos-finales .titulos-producto .tachar2{
+    text-decoration: line-through;
+    color: rgb(63, 72, 204);
+}
+section .productos-finales .comprasss button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(63, 72, 204);
+    color: white;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 81%;
+    height: 25px;
+}
+
+/*apartado herramientas*/
+.herramientas-inicio{
+    display: flex;
+    padding: 2.7% 11%;
+}
+
+/*apartado izquierda*/
+.izquierda{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(136, 174, 245);
+    margin: 0% 2%;
+    height: 80vh;
+    box-shadow: 8px 8px 8px gray;
+}
+.izquierda h3{
+    padding: 7% 5%;
+}
+.izquierda h3 a{
+    text-decoration: none;
+    color: white;
+}
+.izquierda h3 a:hover{
+    color: rgb(63, 72, 204)
+}
+.pliss{
+    display: flex;
+    justify-content: center;
+}
+
+/*Footer*/
+footer{
+    background-color:  rgb(63, 72, 204);
+    display: flex;
+    justify-content: center;
+    grid-gap: 10%;
+    padding: 2%;
+    margin-top: 3%;
+}
+footer .logo-final a img{
+    display: flex;
+    margin: 20px 10px;
+    width: 15vw;
+}
+footer .categorias-finales h3{
+    margin: 10px;
+}
+footer .categorias-finales h2{
+    color: white;
+    margin: 10px;
+}
+footer .categorias-finales h3 a{
+    text-decoration: none;
+    color: white;
+}
+footer .establecimiento h2{
+    color: white;
+    margin: 10px;
+}
+footer .establecimiento h3{
+    color: white;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+

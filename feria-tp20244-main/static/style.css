@@ -1,0 +1,350 @@
+*{
+    margin:0%;
+    padding: 0%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: rgb(250, 239, 226);
+}
+/*Nuestros correos*/
+.correos{
+    background-color: rgb(63, 72, 204);
+    display: flex;
+    justify-content: end;
+    height: 5vh;
+}
+.correos a{
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+}
+/*navv*/
+header{
+    position: sticky;
+    top: 0;
+}
+.logo{
+    background-color: cornflowerblue;
+    display: flex;
+}
+.logo img{
+    display: flex;
+    width: 23vh;
+    margin: 10px 10vh;
+}
+.logo .ellogo img{
+    width: 200px;
+    padding: 20px 110px;
+}
+.logo input{
+    margin: auto;
+    height: 32px;
+    width: 30%;
+    border: 0px;
+    border-radius: 5px;
+}
+ul{
+    display: flex;
+    margin: auto;
+    list-style: none;
+    font-size: 1.3rem;
+}
+ul li{
+    margin: 5px;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    color: rgb(63, 72, 204);
+}
+/*categorias*/
+.categorias{
+    background-color: rgb(63, 72, 204);
+    display: flex;
+    justify-content: space-around;
+    /*padding: 7px;*/
+}
+.categorias h3 a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.categorias h3 a:hover{
+    color: rgb(30, 144, 255);
+}
+/*Ofertas*/
+.ofetas-dia{
+    padding: 15px;
+    font-size: 1.4rem;
+    margin-top: 1%;
+}
+.cuadrado-afuera{
+    display: flex;
+    padding: 10px;
+    border: 2px solid  cornflowerblue;
+    border-radius: 10px;
+    width: 100vh;
+    height: 345px;
+    margin: auto;
+}
+.cuadrado-afuera .oferta{
+    background-color: rgb(133, 164, 223);
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 8px 8px 8px gray;
+}
+.cuadrado-afuera .oferta h3{
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    color: white;
+    font-size: 1.1rem;
+}
+.cuadrado-afuera a img{
+    display: flex;
+    margin: auto;
+    width: 18vh;
+}
+.cuadrado-afuera .oferta span{
+    margin: 1px 11px;
+    color: black;
+}
+.cuadrado-afuera .oferta button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(63, 72, 204);
+    color: white;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 81%;
+    height: 25px;
+}
+.cuadrado-afuera .oferta .tachar{
+    text-decoration: line-through;
+    color: rgb(63, 72, 204);
+}
+/*Ofertas imperdibles imagenes canva*/
+.propaganda{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.propaganda .propaganda-1 img{
+    width: 288px;
+    border-radius: 20px;
+    box-shadow: 4px 7px 5px gray;
+}
+.propaganda .propaganda-2 img{
+    display: flex;
+    border-radius: 15px;
+    margin: 5px 15px 15px 15px;
+    width: 400px;
+    box-shadow: 4px 7px 5px gray;
+}
+.propaganda .propaganda-3 img{
+    width: 288px;
+    border-radius: 20px;
+    box-shadow: 4px 7px 5px gray;
+}
+.destacadas .iconos{
+    display: inline-block;
+    margin: auto;
+}
+.destacadas .iconos img{
+    width: 100px;
+}
+/*categorías destacadas*/
+.categoria-grande{
+    background-color: rgb(63, 72, 204);
+    height: 14vw;
+    margin-top: 2%;
+}
+.categoria-grande .catego{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.categoria-grande .catego .sub-categorias{
+    background-color: cornflowerblue;
+    width: 15vh;
+    height: 17vh;
+    border-radius: 15px;
+}   
+.categoria-grande .catego .sub-categorias h3{
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    margin: 5px;
+}
+.categoria-grande .catego .sub-categorias img{
+    display: flex;
+    margin: auto;
+    width: 10vh;
+}
+.categoria-grande .catego a{
+    text-decoration: none;
+    color: black;
+}
+.destac{
+    padding: 15px;
+    font-size: 1.4rem;
+    color: white;
+}
+/*Ofertas imperdibles imagenes canva 2*/
+.propaganda-2-22{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin: 20px;
+    margin-top: 3%;
+}
+.propaganda-2-22 .propaganda-2-1 img{
+    display: flex;
+    border-radius: 15px;
+    margin: 12px;
+    width: 500px;
+    box-shadow: 8px 8px 8px gray;
+}
+.propaganda-2-22 .propaganda-2-2 img{
+    width: 360px;
+    border-radius: 10px;
+    margin-left: -15%;
+    box-shadow: 8px 8px 8px gray;
+}
+/*los Productos*/
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+section .productos-finales{
+    margin: auto;
+    background-color: rgb(136, 174, 245);
+    width: 220px;
+    height: 340px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 8px gray;
+}
+section .productos-finales img{
+    display: flex;
+    width: 10vw;
+    margin: auto;
+}
+section .productos-finales img:hover{
+    transform: scale(1.1);
+    transition: 3s;
+}
+section .productos-finales a{
+    text-decoration: none;
+}
+section .productos-finales a span{
+    color: black;
+    background-color: cornflowerblue;
+    border-radius: 3px;
+    margin: auto 2px;
+    font-size: 0.9rem;
+}
+section .productos-finales .titulos-producto h3{
+    display: flex;
+    padding: 10px 20px;
+    margin: auto;
+    color: white;
+    font-size: 1rem;
+}
+section .productos-finales .titulos-producto span{
+    margin: 1px 20px;
+    color: black;
+}
+section .productos-finales .titulos-producto .tachar2{
+    text-decoration: line-through;
+    color: rgb(63, 72, 204);
+}
+section .productos-finales .comprasss button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(63, 72, 204);
+    color: white;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 81%;
+    height: 25px;
+}
+/*Footer*/
+footer{
+    background-color:  rgb(63, 72, 204);
+    display: flex;
+    justify-content: center;
+    grid-gap: 10%;
+    padding: 2%;
+    margin-top: 3%;
+}
+footer .logo-final a img{
+    display: flex;
+    margin: 20px 10px;
+    width: 15vw;
+}
+footer .categorias-finales h3{
+    margin: 10px;
+    font-size: 1.3rem;
+}
+footer .categorias-finales h2{
+    color: white;
+    margin: 10px;
+    font-size: 1.8rem;
+}
+footer .categorias-finales h3 a{
+    text-decoration: none;
+    color: white;
+}
+footer .categorias-finales h3 a:hover{
+    color: rgb(30, 144, 255);
+}
+footer .establecimiento h2{
+    color: white;
+    margin: 10px;
+    font-size: 1.7rem;
+}
+footer .establecimiento h3{
+    color: white;
+    margin: 10px;
+    font-size: 1.3rem;
+}
+/*apartado herramientas*/
+.herramientas-inicio{
+    display: flex;
+    padding: 2.7%;
+}
+
+/*apartado puestas*/
+
+.apartado-izquierda{
+    background-color:  rgb(63, 72, 204);
+    width: 70%; 
+    margin: auto;
+    padding: 4%;
+}
+.apartado-izquierda h3{
+    padding: 8%;
+}
+.apartado-izquierda h3 a{
+    text-decoration: none;
+    color: white;
+}
+.apartado-izquierda h3 a:hover{
+    color: dodgerblue;
+}
+.bidbidh{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.container{
+    margin-top: 6%;
+}

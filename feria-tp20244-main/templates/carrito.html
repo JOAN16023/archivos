@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Carrito</h1>
+    <ul>
+        {% for elmnt in elments %}
+            <li>{{elmnt.cant}}x {{elmnt.product.name}}  -> ${{elmnt.product.price * elmnt.cant}}</li>
+        {% endfor %}
+    </ul>
+
+    <form action="/carrito/pay" method="get">
+        <button type="submit">Pagar</button>
+    </form>
+</body>
+</html>

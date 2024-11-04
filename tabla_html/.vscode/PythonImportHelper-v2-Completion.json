@@ -1,0 +1,36 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home():\n    users = [\n        {'first_name' : 'matias', 'last_name' : 'andres'},\n        {'first_name' : 'Joan', 'last_name' : 'ignacio'},\n        {'first_name' : 'juan', 'last_name' : 'thomas'},\n        {'first_name' : 'jose', 'last_name' : 'rodolfo'}\n    ]\n    return render_template('index.html', users=users)\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/')\ndef home():\n    users = [\n        {'first_name' : 'matias', 'last_name' : 'andres'},\n        {'first_name' : 'Joan', 'last_name' : 'ignacio'},\n        {'first_name' : 'juan', 'last_name' : 'thomas'},\n        {'first_name' : 'jose', 'last_name' : 'rodolfo'}\n    ]\n    return render_template('index.html', users=users)",
+        "detail": "app",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Builer/Materiales de Contrucción</title>
+    <link rel="stylesheet" href="/apartado_cada_tipo/Apartados.css">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/Apartados.css') }}">
+</head>
+<body>
+    
+    <!--Nuestros correos-->
+    <nav class="correos">
+        <a href="#"><p>Joan.tapia.hermosilla@alumnos.sip.cl</p></a>
+        <a href="#"><p>Matias.velasquez.donoso.1@alumnos.sip.cl</p></a>
+    </nav>
+<!--navv-->
+<header>
+
+    <nav class="logo">
+        <div class="ellogo">
+            <a href="/logo"><img src="{{ url_for('static', filename='img/logo.2.png') }}" alt=""></a>
+        </div>
+        <input type="text" placeholder=" Buscador">
+        <ul>
+            <li><a href="/inicio">Inicio sesion</a></li>
+            <li><a href="">Compras</a></li>
+        </ul>
+
+    </nav>  
+<!--categorias-->
+    <div class="categorias">
+
+        <h3><a href="/logo">Home</a></h3>
+        <h3><a href="">Nosotros</a></h3>
+        <h3><a href="#">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+        
+    </div>
+</header>
+
+<h4 class="herramientas-inicio">Inicio / Materiales de Contrucción</h4>
+
+<div class="pliss">
+    <div class="izquierda">
+        <div class="apartado-izquierda">
+            <h3><a href="/aislante">Aislante Térmico</a></h3>
+            <h3><a href="/cemento">Cemento y Morteros</a></h3>
+            <h3><a href="/herramientas">Herramientas Eléctricas</a></h3>
+            <h3><a href="/manuales">Herramientas Manuales</a></h3>
+            <h3><a href="/metalcon">Metalcon</a></h3>
+            <h3><a href="/pinturas">Pinturas y Accesorios</a></h3>
+            <h3><a href="/puertas">Puertas y chapas</a></h3>
+            <h3><a href="/techumbres">Techumbres de Metal</a></h3>
+            <h3><a href="/ventanas">Ventanas de Aluminio</a></h3>
+        </div>
+    
+    </div>
+    
+    <section>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-70%</span>
+            <div class="dentro-producto"> 
+                <img src="{{ url_for('static', filename='/imagenes/img_general/material1.png' ) }}" alt="">
+            </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>VOLCANITA 10MM 1.20X2.40MT</h3>
+                <div class="precioss"><span>$50.444</span><span class="tachar2">$60.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+            
+            
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material2.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>TABLA TAPA 1X4" 3.2MT PINO</h3>
+                <div class="precioss"><span>$9.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-20%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material3.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PLANCHA TERCIADO ESTRUCTURAL 15M</h3>
+                <div class="precioss"><span>$25.990</span><span class="tachar2">$35.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material15.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CHAPA GRALUNIZADA 2M</h3>
+                <div class="precioss"><span>$15.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-20%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material4.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PLANCHA ZINC 3.66MT X 0.30MM ACANALADO</h3>
+                <div class="precioss"><span>$20.990</span><span class="tachar2">$30.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material5.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CAN DE MADERA 2.4MM COLOR GRIS</h3>
+                <div class="precioss"><span>$15.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-20%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material6.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PLANCHA PREPINTADO PIT 900</h3>
+                <div class="precioss"><span>$24.990</span><span class="tachar2">$34.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-20%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material8.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>VOLCANITA 10MM 1.20X2.40MT</h3>
+                <div class="precioss"><span>$50.444</span><span class="tachar2">$60.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-40%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material7.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>TIRANTES 2X6 5 METROS</h3>
+                <div class="precioss"><span>$40.444</span><span class="tachar2">$60.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-30%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material9.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>VARILLA CORRUGADA 5/8X6M</h3>
+                <div class="precioss"><span>$50.444</span><span class="tachar2">$80.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material10.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>ZINC ACANALADO 400 MTS X 0.35MM</h3>
+                <div class="precioss"><span>$19.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-10%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_general/material12.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>FIERRO CORRUGADO 3/8</h3>
+                <div class="precioss"><span>$50.444</span><span class="tachar2">$60.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+    </section>
+
+</div>
+
+   <!--Footer-->
+   <footer>
+
+    <div class="logo-final">
+        <a href="/logo">
+            <img src="{{ url_for('static', filename='img/logo.2.png') }}" alt="">
+        </a>
+    </div>
+
+    <div class="categorias-finales">
+        <h2>Nosotros:</h2>
+        <h3><a href="#">Nosotros</a></h3>
+        <h3><a href="/logo">Herramientas</a></h3>
+        <h3><a href="#">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+    </div>
+
+    <div class="establecimiento">
+        <h2>Establecimiento:</h2>
+        <h3>Colegio Arturo Matte Larraín</h3>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>

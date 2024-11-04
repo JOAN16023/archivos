@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .container button {
+            background-color: rgb(23, 72, 204);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .container button:hover {
+            opacity: 0.8;
+        }
+
+        .container .message {
+            margin-top: 10px;
+            font-size: 12px;
+            color: red;
+        }
+        *{
+            margin:0%;
+            padding: 0%;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        body{
+            background-color: rgb(250, 239, 226);
+        }
+        /*Nuestros correos*/
+        .correos{
+            background-color: rgb(63, 72, 204);
+            display: flex;
+            justify-content: end;
+        }
+        .correos a{
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+        }
+        /*navv*/
+        header{
+            position: sticky;
+            top: 0;
+        }
+        .logo{
+            background-color: cornflowerblue;
+            display: flex;
+        }
+        .logo .ellogo img{
+            width: 200px;
+            padding: 20px 110px;
+        }
+        .logo input{
+            margin: auto;
+            height: 32px;
+            width: 30%;
+            border: 0px;
+            border-radius: 5px;
+        }
+        ul{
+            display: flex;
+            margin: auto;
+            list-style: none;
+            font-size: 1.1rem;
+        }
+        ul li{
+            margin: 5px;
+            text-decoration: none;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        ul li a:hover{
+            color: rgb(63, 72, 204);
+        }
+        /*categorias*/
+        .categorias{
+            background-color: rgb(63, 72, 204);
+            display: flex;
+            justify-content: space-around;
+            padding: 7px;
+        }
+        .categorias h3 a{
+            color: white;
+            text-decoration: none;
+        }
+        .categorias h3 a:hover{
+            color: dodgerblue;
+        }
+        /*Footer*/
+footer{
+    background-color:  rgb(63, 72, 204);
+    display: flex;
+    justify-content: center;
+    grid-gap: 10%;
+    padding: 2%;
+    margin-top: 3%;
+}
+footer .logo-final a img{
+    display: flex;
+    margin: 20px 10px;
+    width: 15vw;
+}
+footer .categorias-finales h3{
+    margin: 10px;
+    font-size: 1.3rem;
+}
+footer .categorias-finales h2{
+    color: white;
+    margin: 10px;
+    font-size: 1.8rem;
+}
+footer .categorias-finales h3 a{
+    text-decoration: none;
+    color: white;
+}
+footer .categorias-finales h3 a:hover{
+    color: rgb(30, 144, 255);
+}
+footer .establecimiento h2{
+    color: white;
+    margin: 10px;
+    font-size: 1.7rem;
+}
+footer .establecimiento h3{
+    color: white;
+    margin: 10px;
+    font-size: 1.3rem;
+}
+</style>
+
+<body>
+<!--Nuestros correos-->
+<nav class="correos">
+    <a href="#"><p>Joan.tapia.hermosilla@alumnos.sip.cl</p></a>
+    <a href="#"><p>Matias.velasquez.donoso.1@alumnos.sip.cl</p></a>
+</nav>
+<!--navv-->
+<header>
+
+<nav class="logo">
+    <div class="e">
+        <a href="/index1.html"><img src="img/logo.2.png" alt=""></a>
+    </div>
+    <input type="text" placeholder=" Buscador">
+    <ul>
+        <li><a href="">Inicio sesion</a></li>
+        <li><a href="">Compras</a></li>
+    </ul>
+
+</nav>  
+<!--categorias-->
+<div class="categorias">
+
+    <h3><a href="/index1.html">Home</a></h3>
+    <h3><a href="/index1.html">Herramientas</a></h3>
+    <h3><a href="">Ofertas</a></h3>
+    <h3><a href="#">Información</a></h3>
+    
+</div>
+</header>
+
+    <div class="container">
+        <h2>Regristro</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Nombre de usuario" name="username" id="username" required>
+            <input type="text" placeholder="fecha de nacimiento" name="fecha de nacimiento" id="fecha de nacimiento" required>
+            <input type="text" placeholder="gmail" name="correo" id="correo" required>
+            <input type="password" placeholder="Contraseña" name="password" id="password" required>
+            <input type="password" placeholder="Confirma tu Contraseña" name="password" id="password" required>            
+            <button type="submit" onclick="validateLogin()">Regristro</button>
+            <p class="message">Nombre de usuario o contraseña incorrectos</p>
+        </form>
+    </div>
+
+
+    <footer>
+
+        <div class="logo-final">
+            <a href="/index1.html">
+                <img src="img/logo.2.png" alt="">
+            </a>
+        </div>
+    
+        <div class="categorias-finales">
+            <h2>Nosotros:</h2>
+            <h3><a href="/index1.html">Home</a></h3>
+            <h3><a href="/apartado_cada_tipo/herramientas.html">Herramientas</a></h3>
+            <h3><a href="#">Ofertas</a></h3>
+            <h3><a href="#">Información</a></h3>
+        </div>
+    
+        <div class="establecimiento">
+            <h2>Establecimiento:</h2>
+            <h3>Colegio Arturo Matte Larraín</h3>
+        </div>
+    
+    
+    </footer>
+
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "usuario" && password === "contraseña") {
+                alert("Inicio de sesión exitoso");
+            } else {
+                var message = document.querySelector(".message");
+                message.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='/style.css') }}">
+    <script src="{{ url_for('static',filename='/js/app.js') }}"></script>
+
+</head>
+<body>
+<!--Nuestros correos-->
+    <nav class="correos">
+        <a href="#"><p>Joan.tapia.hermosilla@alumnos.sip.cl</p></a>
+        <a href="#"><p>Matias.velasquez.donoso.1@alumnos.sip.cl</p></a>
+    </nav>
+<!--navv-->
+<header>
+
+    <nav class="logo">
+        <div class="e">
+            <a href="/logo"><img src="{{ url_for('static', filename='img/logo.2.png') }}" alt=""></a>
+        </div>
+        <input type="text" placeholder=" Buscador">
+        <ul>
+            <li><a href="/inicio">Inicio sesion</a></li>
+            <li><a href="">Compras</a></li>
+        </ul>
+
+    </nav>  
+<!--categorias-->
+    <div class="categorias">
+
+        <h3><a href="">Nosotros</a></h3>
+        <h3><a href="">Herramientas</a></h3>
+        <h3><a href="">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+        
+    </div>
+</header>
+<!--Ofertas-->
+<h1 class="ofetas-dia">¡Apúrate! Precios por pocas horas!</h1>
+
+    <div class="cuadrado-afuera">
+        <div class="oferta">
+            <p>-30 %</p>
+            <a href="#"><img src="{{ url_for('static', filename='img/inodoro.png') }}" alt=""></a>
+            <h3>One Piece Sanitario 106 Eco</h3>
+            <span>$54.990</span><span class="tachar">$79.490</span>
+            <button>Comprar</button>
+        </div>
+        <div class="oferta">
+            <p>-30 %</p>
+            <a href="#"><img src="{{ url_for('static', filename='img/sierra.png') }}" alt=""></a>
+            <h3>Sierra Circular 1400W Black</h3>
+            <span>$37.900</span><span class="tachar">$47.990</span>
+            <button>Comprar</button>
+        </div>
+        <div class="oferta">
+            <p> -30 %</p>
+            <a href="#"><img src="{{ url_for('static', filename='img/taladro.png') }}" alt=""></a>
+            <h3>Taladro Inalambrico 20v Black</h3>
+            <span>$53.990</span><span class="tachar">$89.990</span>
+            <button>Comprar</button>
+        </div>
+        <div class="oferta">
+            <p>-30 %</p>
+            <a href="#"><img src="{{ url_for('static', filename='img/ceramica.jpg') }}" alt=""></a>
+            <h3 class="error">Ceramica 45x45CM 2.32M2</h3>
+            <span>$11.490</span><span class="tachar">$14.990</span>
+            <button>Comprar</button>
+        </div>
+    </div>
+<!--Ofertas imperdibles imagenes canva-->
+<h1 class="ofetas-dia">¡Ofertas Imperdibles!</h1>
+
+<div class="propaganda">
+    <div class="propaganda-1">
+        <a href="/metalcon"><img src="{{ url_for('static', filename='img/propuesta6.jpg') }}" alt=""></a>
+    </div>
+    <div class="propaganda-2">
+        <a href="/pinturas"><img src="{{ url_for('static', filename='img/propaganda3.jpg') }}" alt=""></a>
+        <a href="/manuales"><img src="{{ url_for('static', filename='img/propaganda4.jpg') }}" alt=""></a>
+    </div>
+    <div class="propaganda-3">
+        <a href="/cemento"><img src="{{ url_for('static', filename='img/propuesta7.jpg') }}" alt=""></a>
+    </div>
+
+</div>
+    
+<!--categorías destacadas-->
+
+<div class="categoria-grande">
+    <h1 class="destac">Categorías destacadas</h1>
+    <div class="catego">
+        <a href="/aislante">
+            <div class="sub-categorias">
+                <img src="{{ url_for('static', filename='img_iconos/hojas-de-metal.png') }}" alt="">
+                    <h3>Aislante Térmico</h3>
+            </div>
+        </a>
+        <a href="/puertas">
+            <div class="sub-categorias">
+                <img src="{{ url_for('static', filename='img_iconos/puerta11.png') }}" alt="">
+                <h3>Puertas y Chapas</h3>
+            </div>
+        </a>
+        <a href="/pinturas">
+            <div class="sub-categorias">
+                <img src="{{ url_for('static', filename='img_iconos/cubo-de-pintura.png') }}" alt="">
+                <h3>Pinturas y Accesorios</h3>
+            </div>
+        </a>
+        <a href="/techumbres">
+            <div class="sub-categorias">
+                <img src="{{ url_for('static', filename='img_iconos/techo.png') }}" alt="">
+                <h3>Techumbres de Metal</h3>
+            </div>
+        </a>
+        <a href="/ventanas">
+            <div class="sub-categorias">
+                <img src="{{ url_for('static', filename='img_iconos/ventanas.png') }}" alt="">
+                <h3>Ventanas de Aluminio</h3>
+            </div>
+        </a>
+        <a href="/herramientas">
+            <div class="sub-categorias">
+                <img src="{{ url_for('static', filename='img_iconos/taladro-de-mano.png') }}" alt="">
+                <h3>Herramientas Eléctricas</h3>
+            </div>
+        </a>
+    </div>
+</div>
+
+<!--Ofertas imperdibles imagenes canva 2-->
+<div class="propaganda-2-22">
+    
+    <div class="propaganda-2-1">
+        <a href="/puertas">
+            <img src="{{ url_for('static', filename='img/propaganda.jpg') }}" alt="">
+        </a>
+        <a href="/herramientas">
+            <img src="{{ url_for('static', filename='img/propaganda2.jpg') }}" alt="">
+        </a>
+    </div>
+
+    <div class="propaganda-2-2">
+        <a href="/general"><img src="{{ url_for('static', filename='img/propuesta5.jpg') }}" alt=""></a>
+    </div>
+
+</div>
+
+<!--los Productos-->
+
+<h1 class="ofetas-dia">Productos Destacados</h1>
+
+<section>
+
+    <div class="productos-finales">
+        <a href="">
+            <span>-70%</span>
+        <div class="dentro-producto">
+            <img src="{{ url_for('static', filename='img_productos/volcanita.png') }}" alt="">
+        </div>
+        </a>
+        <div class="titulos-producto">
+            <h3>VOLCANITA 10MM 1.20X2.40MT</h3>
+            <div class="precioss"><span>50.444</span><span class="tachar2">60.900</span></div>
+        </div>
+        <div class="comprasss"><button>Comprar</button></div>
+        
+        
+    </div>
+    <div class="productos-finales">
+        <a href="">
+            <span>-70%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='img_productos/esmeril.png') }}" alt="">
+            </div>
+        </a>
+        <div class="titulos-producto">
+            <h3>ESMERIL ANGULAR 4 1/2" 650W BLACK</h3>
+            <div class="precioss"><span>50.444</span><span class="tachar2">60.900</span></div>
+        </div>
+        <div class="comprasss"><button>Comprar</button></div>
+    </div>
+    <div class="productos-finales">
+        <a href="">
+            <span>-70%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='img_productos/cemento.png') }}" alt="">
+            </div>
+        </a>
+        <div class="titulos-producto">
+            <h3>CEMENTO TRANSEX ESPECIAL 25KG</h3>
+            <div class="precioss"><span>50.444</span><span class="tachar2">60.900</span></div>
+        </div>
+        <div class="comprasss"><button>Comprar</button></div>
+    </div>
+    <div class="productos-finales">
+        <a href="">
+            <span>-70%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='img_productos/tabla.png') }}" alt="">
+            </div>
+        </a>
+        <div class="titulos-producto">
+            <h3>TABLA TAPA 1X4" 3.2MT PINO</h3>
+            <div class="precioss"><span>50.444</span><span class="tachar2">60.900</span></div>
+        </div>
+        <div class="comprasss"><button>Comprar</button></div>
+    </div>
+    <div class="productos-finales">
+        <a href="">
+            <span>-70%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='img_productos/plancha.png') }}" alt="">
+            </div>
+        </a>
+        <div class="titulos-producto">
+            <h3>PLANCHA ZINC 3.66MT X 0.30MM ACANALADO</h3>
+            <div class="precioss"><span>50.444</span><span class="tachar2">60.900</span></div>
+        </div>
+        <div class="comprasss"><button>Comprar</button></div>
+    </div>
+    <div class="productos-finales">
+        <a href="">
+            <span>-70%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='img_productos/esmalte.png') }}" alt="">
+            </div>
+        </a>
+        <div class="titulos-producto">
+            <h3>ESMALTE AL AGUA BLANCO DECO PASSOL </h3>
+            <div class="precioss"><span>50.444</span><span class="tachar2">60.900</span></div>
+        </div>
+        <div class="comprasss"><button>Comprar</button></div>
+    </div>
+    <div class="productos-finales">
+        <a href="">
+            <span>-70%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='img_productos/ceramica.png') }}" alt="">
+            </div>
+        </a>
+        <div class="titulos-producto">
+            <h3>CERAMICA TARIMA HUMO 45X45X2.08M2</h3>
+            <div class="precioss"><span>50.444</span><span class="tachar2">60.900</span></div>
+        </div>
+        <div class="comprasss"><button>Comprar</button></div>
+    </div>
+    <div class="productos-finales">
+        <a href="">
+            <span>-70%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='img_productos/aislante-termico.png') }}" alt="">
+            </div>
+        </a>
+        <div class="titulos-producto">
+            <h3>AISLANTE TERMICO ACUSTICO 36M2</h3>
+            <div class="precioss"><span>50.444</span><span class="tachar2">60.900</span></div>
+        </div>
+        <div class="comprasss"><button>Comprar</button></div>
+    </div>
+
+</section>
+
+<!--Footer-->
+<footer>
+
+    <div class="e">
+        <a href="/logo"><img src="{{ url_for('static', filename='img/logo.2.png') }}" alt=""></a>
+    </div>
+
+    <div class="categorias-finales">
+        <h2>Nosotros:</h2>
+        <h3><a href="#">Nosotros</a></h3>
+        <h3><a href="/logo">Herramientas</a></h3>
+        <h3><a href="#">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+    </div>
+
+    <div class="establecimiento">
+        <h2>Establecimiento:</h2>
+        <h3>Colegio Arturo Matte Larraín</h3>
+    </div>
+
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

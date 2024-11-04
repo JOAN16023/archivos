@@ -1,0 +1,113 @@
+*{
+    margin:0%;
+    padding: 0%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    background-color: rgb(250, 239, 226);
+}
+/*navv*/
+header{
+    position: sticky;
+    top: 0;
+}
+.logo{
+    background-color: cornflowerblue;
+    display: flex;
+}
+.logo .ellogo img{
+    width: 200px;
+    padding: 20px 110px;
+}
+.logo input{
+    margin: auto;
+    height: 32px;
+    width: 30%;
+    border: 0px;
+    border-radius: 5px;
+}
+ul{
+    display: flex;
+    margin: auto;
+    list-style: none;
+    font-size: 1.1rem;
+}
+ul li{
+    margin: 5px;
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+ul li a:hover{
+    color: rgb(63, 72, 204);
+}
+/*categorias*/
+.categorias{
+    background-color: rgb(63, 72, 204);
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+}
+.categorias h3 a{
+    color: white;
+    text-decoration: none;
+}
+.categorias h3 a:hover{
+    color: dodgerblue;
+}
+/*Ofertas*/
+.ofetas-dia{
+    padding: 15px;
+    font-size: 1.4rem;
+    margin-top: 1%;
+}
+.cuadrado-afuera{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    width: 65%;
+    height: 345px;
+    margin: auto;
+}
+.cuadrado-afuera .oferta{
+    background-color: rgb(133, 164, 223);
+    border-radius: 10px;
+    margin: 5px;
+    box-shadow: 8px 8px 8px gray;
+}
+.cuadrado-afuera .oferta h3{
+    display: flex;
+    padding: 10px 10px;
+    margin: auto;
+    color: white;
+    font-size: 1.3rem;
+}
+.cuadrado-afuera a img{
+    display: flex;
+    margin: auto;
+    width: 150px;
+}
+.cuadrado-afuera .oferta span{
+    margin: 1px 11px;
+    color: black;
+}
+.cuadrado-afuera .oferta button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    background-color: rgb(63, 72, 204);
+    color: white;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 81%;
+    height: 25px;
+}
+.cuadrado-afuera .oferta .tachar{
+    text-decoration: line-through;
+    color: rgb(63, 72, 204);
+}
+.texto{
+    text-align: center;
+}

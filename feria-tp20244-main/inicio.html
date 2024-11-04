@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .container button {
+            background-color: rgb(23, 72, 204);
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .container button:hover {
+            opacity: 0.8;
+        }
+
+        .container .message {
+            margin-top: 10px;
+            font-size: 12px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<!--Nuestros correos-->
+<nav class="correos">
+    <a href="#"><p>Joan.tapia.hermosilla@alumnos.sip.cl</p></a>
+    <a href="#"><p>Matias.velasquez.donoso.1@alumnos.sip.cl</p></a>
+</nav>
+<!--navv-->
+<header>
+
+<nav class="logo">
+    <div class="e">
+        <a href="/index1.html"><img src="img/logo.2.png" alt=""></a>
+    </div>
+    <input type="text" placeholder=" Buscador">
+    <ul>
+        <li><a href="">Inicio sesion</a></li>
+        <li><a href="">Compras</a></li>
+    </ul>
+
+</nav>  
+<!--categorias-->
+<div class="categorias">
+
+    <h3><a href="/index1.html">Home</a></h3>
+    <h3><a href="/index1.html">Herramientas</a></h3>
+    <h3><a href="">Ofertas</a></h3>
+    <h3><a href="#">Información</a></h3>
+    
+</div>
+</header>
+
+    <div class="container">
+        <h2>Inicio de Sesión</h2>
+        <form id="loginForm">
+            <input type="text" placeholder="Nombre de usuario" name="username" id="username" required>
+            <input type="password" placeholder="Contraseña" name="password" id="password" required>
+            <button type="submit" onclick="validateLogin()">Iniciar Sesión</button>
+            <p class="message">Nombre de usuario o contraseña incorrectos</p>
+        </form>
+    </div>
+
+
+    <footer>
+
+        <div class="logo-final">
+            <a href="/index1.html">
+                <img src="img/logo.2.png" alt="">
+            </a>
+        </div>
+    
+        <div class="categorias-finales">
+            <h2>Nosotros:</h2>
+            <h3><a href="/index1.html">Home</a></h3>
+            <h3><a href="/apartado_cada_tipo/herramientas.html">Herramientas</a></h3>
+            <h3><a href="#">Ofertas</a></h3>
+            <h3><a href="#">Información</a></h3>
+        </div>
+    
+        <div class="establecimiento">
+            <h2>Establecimiento:</h2>
+            <h3>Colegio Arturo Matte Larraín</h3>
+        </div>
+    
+    
+    </footer>
+
+    <script>
+        function validateLogin() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username === "usuario" && password === "contraseña") {
+                alert("Inicio de sesión exitoso");
+            } else {
+                var message = document.querySelector(".message");
+                message.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Builer/Cemento y Morteros</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='/Apartados.css') }}">
+    <link rel="stylesheet" href="/apartado_cada_tipo/Apartados.css">
+</head>
+<body>
+    
+    <!--Nuestros correos-->
+    <nav class="correos">
+        <a href="#"><p>Joan.tapia.hermosilla@alumnos.sip.cl</p></a>
+        <a href="#"><p>Matias.velasquez.donoso.1@alumnos.sip.cl</p></a>
+    </nav>
+<!--navv-->
+<header>
+
+    <nav class="logo">
+        <div class="ellogo">
+            <a href="/logo"><img src="{{ url_for('static', filename='img/logo.2.png') }}" alt=""></a>
+        </div>
+        <input type="text" placeholder=" Buscador">
+        <ul>
+            <li><a href="/inicio">Inicio sesion</a></li>
+            <li><a href="">Compras</a></li>
+        </ul>
+
+    </nav>  
+<!--categorias-->
+    <div class="categorias">
+
+        <h3><a href="/logo">Home</a></h3>
+        <h3><a href="">Nosotros</a></h3>
+        <h3><a href="#">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+        
+    </div>
+</header>
+
+<h4 class="herramientas-inicio">Inicio / Cemento y Morteros</h4>
+
+<div class="pliss">
+    <div class="izquierda">
+        <div class="apartado-izquierda">
+            <h3><a href="/aislante">Aislante Térmico</a></h3>
+            <h3><a href="/herramientas">Herramientas Eléctricas</a></h3>
+            <h3><a href="/manuales">Herramientas Manuales</a></h3>
+            <h3><a href="/metalcon">Metalcon</a></h3>
+            <h3><a href="/general">Materiales de Contruccion</a></h3>
+            <h3><a href="/pinturas">Pinturas y Accesorios</a></h3>
+            <h3><a href="/puertas">Puertas y chapas</a></h3>
+            <h3><a href="/techumbres">Techumbres de Metal</a></h3>
+            <h3><a href="/ventanas">Ventanas de Aluminio</a></h3>
+        </div>
+    
+    </div>
+    
+    <section>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-10%</span>
+            <div class="dentro-producto">
+                <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento1.png' ) }}" alt="">
+            </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>MORTERO DE CEMENTO TOLESEC M-5</h3>
+                <div class="precioss"><span>$14.990</span><span class="tachar2">$19.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+            
+            
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento2.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>BIDÓN 4.5 LT ADITIVO ACELERADOR</h3>
+                <div class="precioss"><span>$19.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-10%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/img_productos/cemento.png') }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CEMENTO TRANSEX ESPECIAL 25KG</h3>
+                <div class="precioss"><span>$20.990</span><span class="tachar2">$25.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-15%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento3.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CEMENTO CRUZ AZUL CONSTRUEX</h3>
+                <div class="precioss"><span>$9.990</span><span class="tachar2">$15.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento4.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CEMENTO COLA - CEMENTOS Y MORTEROS</h3>
+                <div class="precioss"><span>$14.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-25%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento5.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CEMENTO ESPECIAL 25KG TRANSEX</h3>
+                <div class="precioss"><span>$15.990</span><span class="tachar2">$30.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento6.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>SEPARADOR CERAMICA 3MM BOLSA 100 UNID...</h3>
+                <div class="precioss"><span>$990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+        <div class="productos-finales">
+            <a href="">
+                <span>-10%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento7.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CEMENTO MELÓN ESPECIAL 25KG</h3>
+                <div class="precioss"><span>$11.990</span><span class="tachar2">$19.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span></span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento8.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CEMENTOS CBB 25 KILOS ESPECIAL</h3>
+                <div class="precioss"><span>$15.990</span><span class="tachar2"></span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-8%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento9.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CEMENTOS SACOS ARIDOS</h3>
+                <div class="precioss"><span>$19.990</span><span class="tachar2">$25.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-10%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento10.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>PACK DE CEMENTOS TRANSEX SACO 25 KG</h3>
+                <div class="precioss"><span>$50.444</span><span class="tachar2">$60.900</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+        <div class="productos-finales">
+            <a href="">
+                <span>-10%</span>
+                <div class="dentro-producto">
+                    <img src="{{ url_for('static', filename='/imagenes/img_cemento/cemento11.png' ) }}" alt="">
+                </div>
+            </a>
+            <div class="titulos-producto">
+                <h3>CEMENTO FORTALECENTE BLANCO</h3>
+                <div class="precioss"><span>$15.990</span><span class="tachar2">$20.990</span></div>
+            </div>
+            <div class="comprasss"><button>Comprar</button></div>
+        </div>
+    
+    </section>
+
+</div>
+
+   <!--Footer-->
+   <footer>
+
+    <div class="logo-final">
+        <a href="/logo">
+            <img src="{{ url_for('static', filename='img/logo.2.png') }}" alt="">
+        </a>
+    </div>
+
+    <div class="categorias-finales">
+        <h2>Nosotros:</h2>
+        <h3><a href="#">Nosotros</a></h3>
+        <h3><a href="/logo">Herramientas</a></h3>
+        <h3><a href="#">Ofertas</a></h3>
+        <h3><a href="#">Información</a></h3>
+    </div>
+
+    <div class="establecimiento">
+        <h2>Establecimiento:</h2>
+        <h3>Colegio Arturo Matte Larraín</h3>
+    </div>
+
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>

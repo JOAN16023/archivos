@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='/css/style.css') }}">
+    <script src="{{ url_for('static',filename='/js/app.js') }}"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="title">Hola</h1>
+            <button class="btn" onclick="mostrar_alerta()">Click me!</button>
+            <div>
+                {% for tarea in tareas %}
+                    <p>{{ tarea.id }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+[
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "render_template",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "home",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home():\n    return render_template('index1.html')\n@app.route('/inicio')\ndef home1():\n    return render_template('inicio.html')\n@app.route('/aislante')\ndef home3():\n    return render_template('apartado_cada_tipo/aislante.html')\n@app.route('/cemento')\ndef home4():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home1",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home1():\n    return render_template('inicio.html')\n@app.route('/aislante')\ndef home3():\n    return render_template('apartado_cada_tipo/aislante.html')\n@app.route('/cemento')\ndef home4():\n    return render_template('apartado_cada_tipo/cemento.html')\n@app.route('/general')\ndef home5():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home3",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home3():\n    return render_template('apartado_cada_tipo/aislante.html')\n@app.route('/cemento')\ndef home4():\n    return render_template('apartado_cada_tipo/cemento.html')\n@app.route('/general')\ndef home5():\n    return render_template('apartado_cada_tipo/general.html')\n@app.route('/manuales')\ndef home6():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home4",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home4():\n    return render_template('apartado_cada_tipo/cemento.html')\n@app.route('/general')\ndef home5():\n    return render_template('apartado_cada_tipo/general.html')\n@app.route('/manuales')\ndef home6():\n    return render_template('apartado_cada_tipo/manuales.html')\n@app.route('/herramientas')\ndef home7():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home5",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home5():\n    return render_template('apartado_cada_tipo/general.html')\n@app.route('/manuales')\ndef home6():\n    return render_template('apartado_cada_tipo/manuales.html')\n@app.route('/herramientas')\ndef home7():\n    return render_template('apartado_cada_tipo/herramientas.html')\n@app.route('/metalcon')\ndef home8():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home6",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home6():\n    return render_template('apartado_cada_tipo/manuales.html')\n@app.route('/herramientas')\ndef home7():\n    return render_template('apartado_cada_tipo/herramientas.html')\n@app.route('/metalcon')\ndef home8():\n    return render_template('apartado_cada_tipo/metalcon.html')\n@app.route('/pinturas')\ndef home9():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home7",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home7():\n    return render_template('apartado_cada_tipo/herramientas.html')\n@app.route('/metalcon')\ndef home8():\n    return render_template('apartado_cada_tipo/metalcon.html')\n@app.route('/pinturas')\ndef home9():\n    return render_template('apartado_cada_tipo/pinturas.html')\n@app.route('/puertas')\ndef home10():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home8",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home8():\n    return render_template('apartado_cada_tipo/metalcon.html')\n@app.route('/pinturas')\ndef home9():\n    return render_template('apartado_cada_tipo/pinturas.html')\n@app.route('/puertas')\ndef home10():\n    return render_template('apartado_cada_tipo/puertas.html')\n@app.route('/techumbres')\ndef home11():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home9",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home9():\n    return render_template('apartado_cada_tipo/pinturas.html')\n@app.route('/puertas')\ndef home10():\n    return render_template('apartado_cada_tipo/puertas.html')\n@app.route('/techumbres')\ndef home11():\n    return render_template('apartado_cada_tipo/techumbres.html')\n@app.route('/ventanas')\ndef home12():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home10",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home10():\n    return render_template('apartado_cada_tipo/puertas.html')\n@app.route('/techumbres')\ndef home11():\n    return render_template('apartado_cada_tipo/techumbres.html')\n@app.route('/ventanas')\ndef home12():\n    return render_template('apartado_cada_tipo/ventanas.html')\n@app.route('/logo')\ndef home13():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home11",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home11():\n    return render_template('apartado_cada_tipo/techumbres.html')\n@app.route('/ventanas')\ndef home12():\n    return render_template('apartado_cada_tipo/ventanas.html')\n@app.route('/logo')\ndef home13():\n    return render_template('index1.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home12",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home12():\n    return render_template('apartado_cada_tipo/ventanas.html')\n@app.route('/logo')\ndef home13():\n    return render_template('index1.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "home13",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def home13():\n    return render_template('index1.html')\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "app = Flask(__name__, static_folder='static', template_folder='templates')\n@app.route('/', methods=['GET'])\ndef home():\n    return render_template('index1.html')\n@app.route('/inicio')\ndef home1():\n    return render_template('inicio.html')\n@app.route('/aislante')\ndef home3():\n    return render_template('apartado_cada_tipo/aislante.html')",
+        "detail": "app",
+        "documentation": {}
+    }
+]
